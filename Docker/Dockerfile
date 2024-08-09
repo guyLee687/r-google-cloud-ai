@@ -34,7 +34,6 @@ RUN Rscript \
 COPY startup.sh /root/startup.sh
 COPY bootstrap.R /root/bootstrap.R
 
-
 # Configure nginx as a proxy
 COPY cache_cookies.lua /usr/local/openresty/nginx/
 COPY add_cookies.lua /usr/local/openresty/nginx/
